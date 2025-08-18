@@ -37,7 +37,22 @@ body {
   /* letter-spacing: 0.1px; */
 }
 
-/* OPTION B — Only for code blocks (if you prefer proportional text elsewhere)
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-pre, code, kbd, samp { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-*/
+/* Brand styling */
+#site-header-brand a {
+  font-family: "JetBrains Mono", system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 1rem; /* keep readable but not oversized */
+  font-weight: 600;
+  white-space: nowrap; /* no line breaks */
+  overflow: hidden;
+  text-overflow: ellipsis; /* show … when it overflows */
+  display: inline-block;
+  max-width: 260px; /* adjust until it looks balanced */
+}
+
+/* On wider screens, let it expand more */
+@media (min-width: 1024px) {
+  #site-header-brand a {
+    max-width: 400px;
+  }
+}

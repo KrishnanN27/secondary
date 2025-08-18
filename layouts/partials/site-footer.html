@@ -1,0 +1,8 @@
+<footer id="site-footer">
+  <!-- copyright -->
+  <div id="site-footer-copyright">
+    <i class="icon icon-copyright"></i>
+    {{ with .Site.Params.years.start }}{{ . }}-{{ end }}{{
+    .Site.Params.years.present }} {{ .Site.Params.author.name }}
+  </div>
+</footer>

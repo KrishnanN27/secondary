@@ -1,9 +1,8 @@
 <header id="site-header">
   <!-- brand -->
   <div id="site-header-brand">
-    <a href="/">{{ .Site.Title }}</a>
+    <a href="/">Sowndarya Krishnan Navaneetha Kannan</a>
   </div>
-
   <!-- controls -->
   <div id="site-header-controls">
     <!-- theme selector -->
@@ -34,7 +33,6 @@
         </li>
       </ul>
     </div>
-
     <!-- language selector removed -->
   </div>
 
@@ -47,11 +45,23 @@
         $isActive := or (and (eq .URL "/") $isHomePage) (and (ne .URL "/") (in
         $currentPageURL .URL)) }}
         <li>
-          <a href="{{ .URL }}" {{ if $isActive }} class="active" {{ end }}
-            >{{ .Pre }}{{ .Name }}</a
-          >
+          <a href="{{ .URL }}" {{ if $isActive }} class="active" {{ end }}>
+            {{ .Pre }}{{ .Name }}
+          </a>
         </li>
         {{ end }}
+
+        <!-- GitHub logo only -->
+        <li>
+          <a
+            href="https://github.com/KrishnanN27"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i class="icon icon-github"></i>
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
