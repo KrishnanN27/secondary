@@ -1,1 +1,43 @@
-﻿/* hide Docura hero */ .hero, .home-hero, .home__header { display:none !important; }
+﻿/* Register JetBrains Mono (TTF works; WOFF2 is smaller but optional) */
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/font/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/font/JetBrainsMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/font/JetBrainsMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/font/JetBrainsMono-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* OPTION A — Use JetBrains Mono site-wide */
+html,
+body {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+  /* Optional readability tweak for monospace as body: */
+  /* letter-spacing: 0.1px; */
+}
+
+/* OPTION B — Only for code blocks (if you prefer proportional text elsewhere)
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+pre, code, kbd, samp { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+*/

@@ -76,7 +76,7 @@ title: "Home"
 </style>
 
 <div class="home-wrap">
-  <img src="/images/prof/dp.png" alt="Krish profile" class="home-img">
+  <img src="images/prof/dp.png" alt="Krish profile" class="home-img">
 
   <h1 class="home-title">Hi, I’m Krish 👋</h1>
   <p class="home-sub">

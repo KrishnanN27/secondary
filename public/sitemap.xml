@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/secondary/</loc>
-    <lastmod>2025-08-17T00:00:00+00:00</lastmod>
+    <loc>http://localhost:61817/secondary/posts/first-post/</loc>
+    <lastmod>2025-08-17T23:19:32-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/secondary/posts/first-post/</loc>
-    <lastmod>2025-08-17T00:00:00+00:00</lastmod>
+    <loc>http://localhost:61817/secondary/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/secondary/posts/</loc>
-    <lastmod>2025-08-17T00:00:00+00:00</lastmod>
+    <loc>http://localhost:61817/secondary/</loc>
+    <lastmod>2025-08-17T23:19:32-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/secondary/categories/</loc>
+    <loc>http://localhost:61817/secondary/posts/</loc>
+    <lastmod>2025-08-17T23:19:32-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/secondary/tags/</loc>
+    <loc>http://localhost:61817/secondary/tags/</loc>
   </url>
 </urlset>
