@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-	<meta name="generator" content="Hugo 0.148.2"><script src="/new-portfolio/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=new-portfolio/livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.148.2"><script src="/secondary/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=secondary/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projects, notes, and docs.">
+  <meta name="description" content="">
 <meta name="author" content="Krishna N">
 
-<title>Krishna — Portfolio &amp; Docs · Projects, notes, and docs.</title>
+<title>Krishna · </title>
 
-<link rel="canonical" href="http://localhost:1313/new-portfolio/">
-
-
+<link rel="canonical" href="http://localhost:1313/secondary/">
 
 
-  <link rel="stylesheet" href="/new-portfolio/assets/css/home.min.9854bf85860be73d5158ec093043a84d3d3f082f801e4b375d8c786de97e301b.css" integrity="">
+
+
+  <link rel="stylesheet" href="/secondary/assets/css/home.min.9854bf85860be73d5158ec093043a84d3d3f082f801e4b375d8c786de97e301b.css" integrity="">
 
 
 
 
   <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
   
-  <link rel="stylesheet" href="/new-portfolio/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
+  <link rel="stylesheet" href="/secondary/css/component/docsearch.min.cb5a1c417ef755c9bf17808583cb389f7f745310f105256d2c11714b3cfad6df.css" integrity=""/>
 
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/img/icon/favicon.ico">
@@ -38,7 +38,7 @@
     <header id="site-header">
   
   <div id="site-header-brand">
-    <a href="/">Krishna — Portfolio &amp; Docs</a>
+    <a href="/">Krishna</a>
   </div>
 
   
@@ -64,7 +64,7 @@
       </button>
       <ul role="menu" class="dropdown-menu">
         
-          <li role="menuitem"><a href="#">English</a></li>
+          <li role="menuitem"><a href="#"></a></li>
         
       </ul>
     </div>
@@ -78,10 +78,16 @@
         
         
           
-          <li><a href="/new-portfolio/"  class="active"><i class='icon icon-home'></i>Home</a></li>
+          <li><a href="/secondary/"  class="active"><i class='icon icon-home'></i>Home</a></li>
         
           
-          <li><a href="/new-portfolio/docs" ><i class='icon icon-book'></i>Documentation</a></li>
+          <li><a href="/secondary/portfolio" ><i class='icon icon-briefcase'></i>Portfolio</a></li>
+        
+          
+          <li><a href="/secondary/research" ><i class='icon icon-lab'></i>Research</a></li>
+        
+          
+          <li><a href="/secondary/posts" ><i class='icon icon-edit'></i>Posts</a></li>
         
       </ul>
     </nav>
@@ -91,25 +97,160 @@
   <div id="site-header-search"></div>
 </header>
     
-<div id="site-main-content-wrapper">
-  <main>
-    <section class="cover">
-      <h1>Krishna — Portfolio &amp; Docs</h1>
-      <h2>Projects, notes, and docs.</h2>
+  <main class="container">
+    <style>
+  .home-wrap {
+    max-width: 760px;
+    margin: 72px auto;
+    padding: 0 20px;
+    text-align: center;
+    color: var(--text-color, inherit); /* fall back to theme text */
+  }
 
+  .home-img  {
+    width: 200px;
+    max-width: 55%;
+    display: block;
+    margin: 0 auto 28px auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  }
+
+  .home-title{
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--primary, #006699); /* theme primary color */
+  }
+
+  .home-sub  {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: 14px 0 0 0;
+  }
+
+  .pillbar   {
+    margin: 22px auto 0;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pill      {
+    font-size: .9rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--primary, #006699);
+    color: var(--primary, #006699);
+    background: transparent;
+  }
+
+  .link      {
+    color: var(--primary, #006699);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .link:hover{
+    text-decoration: underline;
+  }
+
+  .home-recent {
+  max-width: 760px;       /* match hero width */
+  margin: 48px auto 0;    /* center the block itself */
+  padding: 0 20px;
+  text-align: left;       /* left-align content inside */
+}
+
+.home-recent h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
+  color: var(--primary, #006699);
+}
+
+</style>
+<div class="home-wrap">
+  <img src="/images/prof/dp.png" alt="Krish profile" class="home-img">
+  <h1 class="home-title">Hi, I’m Krish 👋</h1>
+  <p class="home-sub">
+    I’m a first-year PhD student in Computer Science at
+    <a href="https://www.mines.edu/" target="_blank" class="link">Colorado School of Mines</a>.
+    My research focuses on <strong>AI applications</strong> and <strong>quantum computing</strong>.
+  </p>
+  <div class="pillbar">
+    <span class="pill">AI Applications</span>
+    <span class="pill">Quantum Computing</span>
+  </div>
+     
+  
+  <section
+    class="home-recent"
+    style="max-width: 1000px; margin: 56px auto 0; padding: 0 20px"
+  >
+    <h2 style="margin: 0 0 14px 0">Recent Posts</h2>
+  
+    
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+      "
+    >
       
-        <div class="github-buttons">
-  <a href="https://github.com/KrishnanN27/new-portfolio" class="github-button"  data-icon="octicon-star" data-show-count="true" aria-label="Star KrishnanN27/new-portfolio on GitHub">Star</a>
-  <a href="https://github.com/KrishnanN27/new-portfolio/fork" class="github-button"  data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork KrishnanN27/new-portfolio on GitHub">Fork</a>
+      <article
+        style="
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          border-radius: 12px;
+          padding: 16px;
+          background: var(--card-bg, #fff);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+          transition: transform 0.15s ease, box-shadow 0.15s ease;
+        "
+        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,.10)';"
+        onmouseout="this.style.transform='none'; this.style.boxShadow='0 8px 18px rgba(0,0,0,.06)';"
+      >
+        <a
+          href="/secondary/posts/first-post/"
+          style="text-decoration: none; color: inherit"
+        >
+          <h3
+            style="
+              margin: 0 0 6px 0;
+              font-size: 1.1rem;
+              color: var(--primary, inherit);
+            "
+          >
+            My First Post
+          </h3>
+        </a>
+        <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 8px">
+          Aug 17, 2025
+        </div>
+        
+        <p style="margin: 0; line-height: 1.6">A quick test post to check blog rendering.</p>
+        
+        <div style="margin-top: 10px">
+          <a
+            href="/secondary/posts/first-post/"
+            style="
+              text-decoration: none;
+              color: var(--primary, inherit);
+              font-weight: 600;
+            "
+            >Read more →</a
+          >
+        </div>
+      </article>
+      
+    </div>
+    
+  </section>
 
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </div>
 
-      
-
-    </section>
   </main>
-</div>
 
     <footer id="site-footer">
   
@@ -157,12 +298,12 @@
 
 
 
-<script type="text/javascript" src="/new-portfolio/js/base.min.js"></script>
+<script type="text/javascript" src="/secondary/js/base.min.js"></script>
 
 
 
   
-  <script src="/new-portfolio/js/component/docsearch.min.js"></script>
+  <script src="/secondary/js/component/docsearch.min.js"></script>
   <script type="application/javascript">
       docsearch({
           container: '#site-header-search',

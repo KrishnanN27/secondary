@@ -1,0 +1,71 @@
+{{/* layouts/shortcodes/recent.html */}} {{ $limit := .Get 0 | default 3 | int
+}} {{ $posts := (where .Site.RegularPages "Section" "posts") }} {{ $posts =
+$posts.ByDate.Reverse }}
+
+<section
+  class="home-recent"
+  style="max-width: 1000px; margin: 56px auto 0; padding: 0 20px"
+>
+  <h2 style="margin: 0 0 14px 0">Recent Posts</h2>
+
+  {{ if gt (len $posts) 0 }}
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    "
+  >
+    {{ range first $limit $posts }}
+    <article
+      style="
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        padding: 16px;
+        background: var(--card-bg, #fff);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      "
+      onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,.10)';"
+      onmouseout="this.style.transform='none'; this.style.boxShadow='0 8px 18px rgba(0,0,0,.06)';"
+    >
+      <a
+        href="{{ .RelPermalink }}"
+        style="text-decoration: none; color: inherit"
+      >
+        <h3
+          style="
+            margin: 0 0 6px 0;
+            font-size: 1.1rem;
+            color: var(--primary, inherit);
+          "
+        >
+          {{ .Title }}
+        </h3>
+      </a>
+      <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 8px">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </div>
+      {{ with .Params.description }}
+      <p style="margin: 0; line-height: 1.6">{{ . }}</p>
+      {{ else }}
+      <p style="margin: 0; line-height: 1.6">{{ .Summary }}</p>
+      {{ end }}
+      <div style="margin-top: 10px">
+        <a
+          href="{{ .RelPermalink }}"
+          style="
+            text-decoration: none;
+            color: var(--primary, inherit);
+            font-weight: 600;
+          "
+          >Read more →</a
+        >
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p>No posts yet.</p>
+  {{ end }}
+</section>

@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Krishna — Portfolio &amp; Docs</title>
-    <link>http://localhost:1313/new-portfolio/</link>
-    <description>Recent content on Krishna — Portfolio &amp; Docs</description>
+    <title>Home on Krishna</title>
+    <link>http://localhost:1313/secondary/</link>
+    <description>Recent content in Home on Krishna</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:1313/new-portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/secondary/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Overview</title>
-      <link>http://localhost:1313/new-portfolio/docs/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-portfolio/docs/overview/</guid>
-      <description>&lt;p&gt;Welcome! This site documents my projects and notes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Page 01</title>
-      <link>http://localhost:1313/new-portfolio/docs/page-01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-portfolio/docs/page-01/</guid>
-      <description>&lt;p&gt;Content for &lt;strong&gt;Page 01&lt;/strong&gt;. Put a project or tutorial here.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Page 02</title>
-      <link>http://localhost:1313/new-portfolio/docs/page-02/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-portfolio/docs/page-02/</guid>
-      <description>&lt;p&gt;Content for &lt;strong&gt;Page 02&lt;/strong&gt;. Notes, tips, or snippets go here.&lt;/p&gt;</description>
+      <title>My First Post</title>
+      <link>http://localhost:1313/secondary/posts/first-post/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/secondary/posts/first-post/</guid>
+      <description>&lt;h1 id=&#34;hello-world-&#34;&gt;Hello World 🌍&lt;/h1&gt;&#xA;&lt;p&gt;This is a &lt;strong&gt;dummy post&lt;/strong&gt; to see if Hugo renders my blog properly.&lt;/p&gt;&#xA;&lt;p&gt;Here’s some filler text:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;And some code:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello from Hugo!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

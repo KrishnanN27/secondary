@@ -1,22 +1,20 @@
-baseURL: "https://krishnann27.github.io/new-portfolio/"
+baseURL: "https://krishnann27.github.io/secondary/"  # change if you use a custom domain
 theme: docura
 enableGitInfo: true
 defaultContentLanguage: en
 
-languages:
-  en:
-    weight: 1
-    languageName: English
-    languageCode: en-US
-    contentDir: content/en
-    title: "Krishna — Portfolio & Docs"
-    params:
-      description: "Projects, notes, and docs."
+# --- Site Metadata ---
+title: "Krishna"
+languageCode: en-US
+params:
+  description: "Projects, notes, and docs."
 
+# --- Services ---
 services:
   googleAnalytics:
-    ID: "" # keep empty unless you have GA4
+    ID: ""   # GA4 tracking ID (optional)
 
+# --- Markup ---
 markup:
   highlight:
     noClasses: false
@@ -24,6 +22,7 @@ markup:
     renderer:
       unsafe: true
 
+# --- Params ---
 params:
   author:
     name: "Krishna N"
@@ -39,6 +38,10 @@ params:
 
   social:
     github: "KrishnanN27"
+    linkedin: "https://www.linkedin.com/in/krishnan-n/"
+    devpost: "https://devpost.com/KrishnanN27"
+    email: "sowndaryakrishnanna@mines.edu"
+    # leave blank if not needed
     youtube: ""
     facebook: ""
     x: ""
@@ -57,10 +60,11 @@ params:
       indexName: ""
       apiKey: ""
 
+  # Homepage repo card (optional)
   home:
-    # shows a repo link/card on the homepage if the theme supports it
-    repository: "KrishnanN27/new-portfolio"
+    repository: "KrishnanN27/secondary"
 
+# --- Menu ---
 menu:
   main:
     - url: /
@@ -69,8 +73,33 @@ menu:
       pre: "<i class='icon icon-home'></i>"
       weight: 1
 
-    - url: /docs
-      name: Documentation
-      identifier: docs
-      pre: "<i class='icon icon-book'></i>"
-      weight: 2
+
+    - url: /portfolio
+      name: Portfolio
+      identifier: portfolio
+      pre: "<i class='icon icon-briefcase'></i>"
+      weight: 3
+
+    - url: /research
+      name: Research
+      identifier: research
+      pre: "<i class='icon icon-lab'></i>"
+      weight: 4
+
+    - url: /posts
+      name: Posts
+      identifier: posts
+      pre: "<i class='icon icon-edit'></i>"
+      weight: 5
+
+    # - url: /gallery
+    #   name: Gallery
+    #   identifier: gallery
+    #   pre: "<i class='icon icon-image'></i>"
+    #   weight: 6
+
+    # - url: /connect
+    #   name: Connect
+    #   identifier: connect
+    #   pre: "<i class='icon icon-user'></i>"
+    #   weight: 7

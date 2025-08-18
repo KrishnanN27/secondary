@@ -1,0 +1,40 @@
+{{ define "main" }}
+<main
+  class="container"
+  style="max-width: 900px; margin: 2rem auto; padding: 0 1rem"
+>
+  <h1>{{ .Title }}</h1>
+  {{ if .Paginator.Pages }}
+  <ul style="list-style: none; padding: 0; margin: 1.5rem 0">
+    {{ range .Paginator.Pages }}
+    <li
+      style="
+        margin: 1rem 0;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      "
+    >
+      <a
+        href="{{ .RelPermalink }}"
+        style="
+          font-size: 1.1rem;
+          text-decoration: none;
+          color: var(--primary, inherit);
+        "
+      >
+        {{ .Title }}
+      </a>
+      <div style="font-size: 0.9rem; opacity: 0.7">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </div>
+      {{ with .Params.description }}
+      <div style="margin-top: 0.3rem">{{ . }}</div>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }} {{ else }}
+  <p>No posts yet.</p>
+  {{ end }}
+</main>
+{{ end }}
