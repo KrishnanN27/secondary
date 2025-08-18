@@ -1,0 +1,76 @@
+baseURL: "https://krishnann27.github.io/new-portfolio/"
+theme: docura
+enableGitInfo: true
+defaultContentLanguage: en
+
+languages:
+  en:
+    weight: 1
+    languageName: English
+    languageCode: en-US
+    contentDir: content/en
+    title: "Krishna — Portfolio & Docs"
+    params:
+      description: "Projects, notes, and docs."
+
+services:
+  googleAnalytics:
+    ID: "" # keep empty unless you have GA4
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  author:
+    name: "Krishna N"
+    url: "https://krishnann27.github.io"
+
+  themeColors:
+    light: "#ffffff"
+    dark: "#121212"
+
+  years:
+    start: "2024"
+    present: 2025
+
+  social:
+    github: "KrishnanN27"
+    youtube: ""
+    facebook: ""
+    x: ""
+
+  ads:
+    googleAdSense: ""
+
+  donate:
+    buyMeACoffee: ""
+    githubSponsor: ""
+
+  algolia:
+    en:
+      container: "#site-header-search"
+      appId: ""
+      indexName: ""
+      apiKey: ""
+
+  home:
+    # shows a repo link/card on the homepage if the theme supports it
+    repository: "KrishnanN27/new-portfolio"
+
+menu:
+  main:
+    - url: /
+      name: Home
+      identifier: home
+      pre: "<i class='icon icon-home'></i>"
+      weight: 1
+
+    - url: /docs
+      name: Documentation
+      identifier: docs
+      pre: "<i class='icon icon-book'></i>"
+      weight: 2

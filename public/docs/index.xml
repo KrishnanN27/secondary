@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Krishna — Portfolio &amp; Docs</title>
+    <link>http://localhost:1313/new-portfolio/docs/</link>
+    <description>Recent content in Docs on Krishna — Portfolio &amp; Docs</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/new-portfolio/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview</title>
+      <link>http://localhost:1313/new-portfolio/docs/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/new-portfolio/docs/overview/</guid>
+      <description>&lt;p&gt;Welcome! This site documents my projects and notes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Page 01</title>
+      <link>http://localhost:1313/new-portfolio/docs/page-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/new-portfolio/docs/page-01/</guid>
+      <description>&lt;p&gt;Content for &lt;strong&gt;Page 01&lt;/strong&gt;. Put a project or tutorial here.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Page 02</title>
+      <link>http://localhost:1313/new-portfolio/docs/page-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/new-portfolio/docs/page-02/</guid>
+      <description>&lt;p&gt;Content for &lt;strong&gt;Page 02&lt;/strong&gt;. Notes, tips, or snippets go here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
