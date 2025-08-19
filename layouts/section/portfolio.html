@@ -13,8 +13,7 @@ resources.Fingerprint }}
   </article>
 
   <aside class="cv-toc-wrap">
-    {{/* Build TOC from headings in content (no "Download" section exists now)
-    */}} {{ with .TableOfContents }}
+    {{ with .TableOfContents }}
     <div class="cv-toc">{{ . | safeHTML }}</div>
     {{ end }}
   </aside>
