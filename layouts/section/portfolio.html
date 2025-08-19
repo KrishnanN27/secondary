@@ -1,0 +1,47 @@
+{{ define "main" }} {{/* Load assets/css/portfolio.css via Hugo Pipes */}} {{
+$cvcss := resources.Get "css/portfolio.css" | resources.Minify |
+resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $cvcss.RelPermalink }}" />
+
+<div class="cv-shell">
+  <article class="cv-body">
+    {{ with .Params.cv_pdf }}
+    <a class="btn" href="{{ . | relURL }}" target="_blank" rel="noopener"
+      >📄 Download CV</a
+    >
+    {{ end }} {{ .Content }}
+  </article>
+
+  <aside class="cv-toc-wrap">
+    {{/* Build TOC from headings in content (no "Download" section exists now)
+    */}} {{ with .TableOfContents }}
+    <div class="cv-toc">{{ . | safeHTML }}</div>
+    {{ end }}
+  </aside>
+</div>
+
+<script>
+  // Scrollspy for TOC
+  (function () {
+    const toc = document.querySelector(".cv-toc");
+    if (!toc) return;
+    const links = Array.from(toc.querySelectorAll("a"));
+    const targets = links.map((a) =>
+      document.querySelector(a.getAttribute("href"))
+    );
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          const i = targets.indexOf(e.target);
+          if (i >= 0 && e.isIntersecting) {
+            links.forEach((l) => l.classList.remove("active"));
+            links[i].classList.add("active");
+          }
+        });
+      },
+      { rootMargin: "0px 0px -70% 0px", threshold: 0.01 }
+    );
+    targets.forEach((el) => el && io.observe(el));
+  })();
+</script>
+{{ end }}

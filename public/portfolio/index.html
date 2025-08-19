@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta
   name="description"
-  content="A quick test post to check blog rendering."
+  content=""
 />
 <meta name="author" content="Krishna N" />
 
 <title>
-  My First Post · Krishna
+  Portfolio · Krishna
 </title>
 
-<link rel="canonical" href="http://localhost:1313/secondary/posts/first-post/" />
+<link rel="canonical" href="http://localhost:1313/secondary/portfolio/" />
 
  
   <link rel="stylesheet" href="/secondary/assets/css/docs.min.c79fa7e9ed960154dbc4281e06351f27da62cc0cb1d7a927c7892938423971f1.css" integrity="">
@@ -90,7 +90,7 @@
         </li>
          
         <li>
-          <a href="/secondary/portfolio" >
+          <a href="/secondary/portfolio"  class="active" >
             <i class='icon icon-briefcase'></i>Portfolio
           </a>
         </li>
@@ -102,7 +102,7 @@
         </li>
          
         <li>
-          <a href="/secondary/posts"  class="active" >
+          <a href="/secondary/posts" >
             <i class='icon icon-edit'></i>Posts
           </a>
         </li>
@@ -127,25 +127,67 @@
   <div id="site-header-search"></div>
 </header>
 
+      
+<link rel="stylesheet" href="/secondary/css/portfolio.min.a096da53f907912cfa59d4fac7b1f1a0e25d22b248931aec419dc8c060206643.css" />
+
+<div class="cv-shell">
+  <article class="cv-body">
     
-<article
-  class="container"
-  style="max-width: 860px; margin: 2rem auto; padding: 0 1rem"
->
-  <h1 style="margin-bottom: 0.2rem">My First Post</h1>
-  <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1.2rem">
-    Aug 17, 2025
-  </div>
-  <div class="content"><h1 id="hello-world-">Hello World 🌍</h1>
-<p>This is a <strong>dummy post</strong> to see if Hugo renders my blog properly.</p>
-<p>Here’s some filler text:</p>
-<blockquote>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p></blockquote>
-<p>And some code:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello from Hugo!&#34;</span><span class="p">)</span>
-</span></span></code></pre></div></div>
-</article>
+    <a class="btn" href="/secondary/files/Krish-CV.pdf" target="_blank" rel="noopener"
+      >📄 Download CV</a
+    >
+     <h2 id="summary">Summary</h2>
+<p>&hellip;</p>
+<hr>
+<h2 id="education">Education</h2>
+<p>&hellip;</p>
+<hr>
+<h2 id="experience">Experience</h2>
+<p>&hellip;</p>
+<hr>
+<h2 id="skills">Technical skills &amp; tools</h2>
+<p>&hellip;</p>
+
+  </article>
+
+  <aside class="cv-toc-wrap">
+     
+    <div class="cv-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Technical skills &amp; tools</a></li>
+  </ul>
+</nav></div>
+    
+  </aside>
+</div>
+
+<script>
+  
+  (function () {
+    const toc = document.querySelector(".cv-toc");
+    if (!toc) return;
+    const links = Array.from(toc.querySelectorAll("a"));
+    const targets = links.map((a) =>
+      document.querySelector(a.getAttribute("href"))
+    );
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          const i = targets.indexOf(e.target);
+          if (i >= 0 && e.isIntersecting) {
+            links.forEach((l) => l.classList.remove("active"));
+            links[i].classList.add("active");
+          }
+        });
+      },
+      { rootMargin: "0px 0px -70% 0px", threshold: 0.01 }
+    );
+    targets.forEach((el) => el && io.observe(el));
+  })();
+</script>
 
     <footer id="site-footer">
   
